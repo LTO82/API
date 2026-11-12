@@ -8,3 +8,18 @@
   --mute: #9a7fa3;
   --white: #fffdfb;
 }
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Fredoka", "Trebuchet MS", "Comic Sans MS", sans-serif;
+  background-color: #ffe3ef;
+  /* polka dots */
+  background-image:
+    radial-gradient(circle, #fff 4px, transparent 5px),
+    radial-gradient(circle, #ffd0e4 3px, transparent 4px);
+  background-size: 48px 48px, 48px 48px;
+  background-position: 0 0, 24px 24px;
+}
