@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --pink: #ffb3d1;
   --pink-deep: #ff7eb3;
@@ -8,6 +9,7 @@
   --mute: #9a7fa3;
   --white: #fffdfb;
 }
+
 * { box-sizing: border-box; }
 
 body {
@@ -23,6 +25,7 @@ body {
   background-size: 48px 48px, 48px 48px;
   background-position: 0 0, 24px 24px;
 }
+
 main { max-width: 560px; margin: 0 auto; padding: 24px 16px 48px; }
 
 /* ---------- header ---------- */
@@ -30,7 +33,7 @@ header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
 h1 { margin: 0; font-size: 2.1rem; font-weight: 700; color: var(--pink-deep); text-shadow: 2px 2px 0 #fff, 4px 4px 0 var(--blue); }
 .tagline { margin: 2px 0 0; color: var(--mute); font-weight: 500; }
 
-/* Poke Ball made with CSS */
+/* Poké Ball made with CSS */
 .pokeball {
   flex: none;
   width: 52px; height: 52px;
@@ -50,6 +53,7 @@ h1 { margin: 0; font-size: 2.1rem; font-weight: 700; color: var(--pink-deep); te
   background: var(--white);
   border: 4px solid var(--ink);
 }
+
 /* ---------- form + buttons ---------- */
 form { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
 
@@ -93,17 +97,8 @@ input:focus, button:focus-visible { outline: 4px solid var(--pink-deep); outline
   overflow: hidden;
   box-shadow: 0 8px 0 rgba(90, 61, 99, .25);
 }
-.top { padding: 22px 20px 18px; text-align: center; position: relative; }
-.top::before, .top::after {
-  content: "âœ¦";
-  position: absolute;
-  color: #fff;
-  font-size: 1.6rem;
-  text-shadow: 0 0 6px rgba(90, 61, 99, .25);
-}
-.top::before { top: 16px; left: 22px; }
-.top::after { top: 60px; right: 26px; font-size: 1.1rem; }
 
+.top { padding: 22px 20px 18px; text-align: center; position: relative; }
 .top .num {
   display: inline-block;
   padding: 2px 14px;
