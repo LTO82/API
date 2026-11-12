@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pocket Pokédex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <span class="pokeball" aria-hidden="true"></span>
+      <div>
+        <h1>Pocket Pokédex</h1>
+        <p class="tagline">Find your favorite Pokémon! ✨</p>
+      </div>
+    </header>
+
+    <form id="search-form">
+      <input id="search-input" type="text" placeholder="Name or number (try pikachu!)" aria-label="Pokémon name or number">
+      <button type="submit" class="btn-search">Search</button>
+      <button type="button" id="random-btn" class="btn-random">Surprise me!</button>
+    </form>
+
+    <div id="card"></div>
+
+    <div class="nav">
+      <button type="button" id="prev-btn">&larr; Previous</button>
+      <button type="button" id="next-btn">Next &rarr;</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
